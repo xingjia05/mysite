@@ -27,7 +27,8 @@ use common\models\Adminuser;
             ->select(['name','id'])
             ->orderBy('position')
             ->indexBy('id')
-            ->column(), ['prompt' => '请选择状态']) ?>
+            ->column(), ['prompt' => '请选择状态']);
+    ArrayHelper::remove();?>
 
     <?= $form->field($model,'author_id')
             ->dropDownList(Adminuser::find()
