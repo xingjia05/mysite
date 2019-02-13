@@ -57,7 +57,7 @@ class PostSearch extends Post
                     'id' => SORT_DESC
                 ]
             ],
-            'pagination' => ['pageSize' => 2]
+            'pagination' => ['pageSize' => 5]
         ]);
 
         $this->load($params);

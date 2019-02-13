@@ -10,11 +10,13 @@ use common\models\AdminuserSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\AuthItem;
+use common\models\AuthAssignment;
 
 /**
  * AdminuserController implements the CRUD actions for adminuser model.
  */
-class AdminuserController extends Controller
+class AdminuserController extends BaseController
 {
     /**
      * @inheritdoc
